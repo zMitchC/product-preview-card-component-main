@@ -145,3 +145,48 @@ body{
         margin-bottom: 15px;
     }
 }
+
+@media only screen and (max-width: 300px){
+    .container{
+        max-width: 200px;
+        margin: 10px;
+    }
+    .content-container{
+        min-width: 100px;
+    }
+    .content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .image-container{
+        display: none;
+    }
+    .image-mobile-container{
+        display: block;
+        max-width: 100%;
+        margin: 0;
+    }
+    #perfume-image-mobile{
+    width: 200px;
+    display: block;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    }
+
+    #title, #price-at-the-moment{
+        font-size: 24px;
+        padding-top: 5px;
+    }
+    #category, #description{
+        font-size: 11px;
+        margin-top: 6px;
+    }
+    #category{
+        margin-bottom: 0;
+    }
+    .add-to-cart-button{
+        margin: 0;
+        margin-bottom: 15px;
+    }
+}
