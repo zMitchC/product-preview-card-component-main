@@ -11,7 +11,7 @@ body{
 /* -- CONTAINER -- */
 .container{
     background-color: white;
-    min-width: 600px;
+    max-width: 600px;
     border-radius: 10px;
     margin: 0;
 }
@@ -30,7 +30,6 @@ body{
 }
 .image-mobile-container{
     display: none;
-    max-width: 100px;
 }
 
 /* -- CONTENT -- */
@@ -40,10 +39,10 @@ body{
     max-width: 300px;
 }
 .content{
-    padding-left: 25px;
-    padding-right: 25px;
     padding-top: 5px;
+    padding-right: 25px;
     padding-bottom: -5px;
+    padding-left: 25px;
     max-width: 100%;
     display: flex;
 }
@@ -51,8 +50,8 @@ body{
 #category, #description, #price-before-discount, .add-to-cart-button{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    color: hsl(228, 12%, 48%);
     font-size: 14px;
+    color: hsl(228, 12%, 48%);
 }
 #category{
     letter-spacing: 0.3em;
@@ -61,10 +60,10 @@ body{
 
 #title, #price-at-the-moment{
     font-family: 'Fraunces', sans-serif;
-    font-weight: bolder;
+    font-weight: 700;
+    font-size: 37px;
     color: hsl(212, 21%, 14%);
     margin: 0;
-    font-size: 37px;
 }
 #price-at-the-moment{
     color: hsl(158, 36%, 37%);
@@ -79,9 +78,9 @@ body{
     color: white;
     border: 0;
     min-width: 100%;
+    margin-top: 10px;
     padding: 15px;
     border-radius: 10px;
-    margin-top: 10px;
     font-weight: 700;
     cursor: pointer; /* use hands!! */
     /* center the cart image */
@@ -107,11 +106,7 @@ body{
 
 /* -- ACCESSIBILITY -- */
 @media only screen and (max-width: 600px){
-    .container{
-        min-width: 100px;
-        margin: 10px;
-    }
-    .content-container{
+    .container, .content-container{
         min-width: 100px;
     }
     .content{
@@ -156,47 +151,19 @@ body{
 }
 
 @media only screen and (max-width: 300px){
-    .container{
+    .container, .content-container{
         max-width: 200px;
-        margin: 10px;
     }
-    .content-container{
-        min-width: 100px;
-    }
-    .content{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .image-container{
-        display: none;
-    }
-    .image-mobile-container{
-        display: block;
-        max-width: 100%;
-        margin: 0;
-    }
+
     #perfume-image-mobile{
     width: 200px;
-    display: block;
-    margin: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     }
 
     #title, #price-at-the-moment{
         font-size: 24px;
-        padding-top: 5px;
     }
     #category, #description{
         font-size: 11px;
-        margin-top: 6px;
-    }
-    #category{
-        margin-bottom: 0;
-    }
-    .add-to-cart-button{
-        margin: 0;
-        margin-bottom: 15px;
     }
 
     .attribution{
