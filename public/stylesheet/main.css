@@ -100,6 +100,11 @@ body{
     background-color: hsl(157, 39%, 23%);
 }
 
+.attribution{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* -- ACCESSIBILITY -- */
 @media only screen and (max-width: 600px){
     .container{
@@ -143,6 +148,10 @@ body{
     .add-to-cart-button{
         margin: 0;
         margin-bottom: 15px;
+    }
+
+    .attribution{
+        font-size: 12px;
     }
 }
 
@@ -188,5 +197,9 @@ body{
     .add-to-cart-button{
         margin: 0;
         margin-bottom: 15px;
+    }
+
+    .attribution{
+        font-size: 10px;
     }
 }
